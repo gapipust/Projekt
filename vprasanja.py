@@ -1,0 +1,1 @@
+slovar = {"Ali je lahko funkcija v točki zvezna, a ni odvedljiva?":"da"}
