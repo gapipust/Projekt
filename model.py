@@ -22,6 +22,12 @@ class Igra:
         else:
             self.odgovor = odgovor
 
+    def naslednje(self):
+        del slovar[self.trenutno_vprasanje]
+        vprasanje = choice(slovar.keys())
+        self.trenutno_vprasanje = vprasanje
+        self.pravilen_odgovor = slovar[vprasanje]
+
     def napacni_odgovori(self):
         napacni = []
         if self.odgovor != self.pravilen_odgovor:

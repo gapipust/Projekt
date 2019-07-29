@@ -1,1 +1,10 @@
-slovar = {"Ali je lahko funkcija v točki zvezna, a ni odvedljiva?":"da"}
+slovar = {"Ali je lahko funkcija v točki zvezna, a ni odvedljiva?":"da",
+"Kateri izrek govori o povezavi med hipotenuzo in katetama v pravokotnem trikotniku?":"pitagorov",
+"Kako imenujemo telo, ki ga dobimo, če funkcijo zavrtimo okoli koordinatne osi?":"vrtenina",
+"Kako imenujemo naslednjo lastnost: a + b = b + a?":"komutativnost",
+"Če se vsi členi zaporedja približujejo nekemu številu, je to število ________ zaporedja.":"limita",
+"Če je množica zaprta in omejena, je __________":"kompaktna",
+"Kako imenujemo premico, ki se krožnice samo dotika v neki točki?":"tangenta",
+"Če vrsta konvergira absolutno, ali tudi konvergira?":"da",
+"Kako imenujemo enačbo, ki poleg neznane funkcije y vsebuje tudi njen odvod y'? -_____________ enačba":"diferencialna",
+"Kako pravimo funkcijam, ki jih je možno integrirati? -_____________ funkcije":"integrabilne"}
