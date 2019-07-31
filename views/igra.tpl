@@ -36,7 +36,7 @@
 
 %end
 
-<form action="/igra/" method="post">
+<form action="/vprasanje/" method="post">
     Odgovor: <input type="text" name="odgovor">
     <button type="submit">Pošlji odgovor</button>
 </form>

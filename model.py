@@ -31,7 +31,8 @@ class Igra:
 
     def naslednje(self):
         del slovar[self.trenutno_vprasanje]
-        vprasanje = choice(slovar.keys())
+        vprasanja = sez_vprasanj(slovar)
+        vprasanje = choice(vprasanja)
         self.trenutno_vprasanje = vprasanje
         self.pravilen_odgovor = slovar[vprasanje]
 
@@ -69,17 +70,20 @@ class Igra:
             if self.zmaga():
                 return ZMAGA
             else:
+                self.naslednje()
                 return PRAVILEN_ODGOVOR
         else:
             if self.poraz():
                 return PORAZ
             else:
+                self.naslednje()
                 return NAPACEN_ODGOVOR
 
 def nova_igra():
     return Igra(slovar)
 
 class Kviz:
+
     def __init__(self):
         self.igre = {}
 
@@ -88,7 +92,7 @@ class Kviz:
             return 0
         else:
             return max(self.igre.keys()) + 1
-    
+
     def nova_igra(self):
         igra = nova_igra()
         id_igre = self.prost_id_igre()
