@@ -12,9 +12,16 @@ ZMAGA = "W"
 PORAZ = "X"
 ZACETEK = "S"
 
+def sez_vprasanj(slovar):
+        seznam = []
+        for vprasanje in slovar.keys():
+            seznam.append(vprasanje)
+        return seznam
+
 class Igra:
     def __init__(self, slovar, odgovor=None):
-        vprasanje = choice(slovar.keys())
+        vprasanja = sez_vprasanj(slovar)
+        vprasanje = choice(vprasanja)
         self.trenutno_vprasanje = vprasanje
         self.pravilen_odgovor = slovar[vprasanje]
         if odgovor == None:
@@ -41,13 +48,13 @@ class Igra:
         return pravilni
 
     def napake(self):
-        return len(self.napacni_odgovori())
+        return len(self.napacni_odgovori()) - 1
 
     def pravilni(self):
         return len(self.pravilni_odgovori())
 
     def zmaga(self):
-        self.pravilni() == STEVILO_PRAVILNIH
+        return self.pravilni() == STEVILO_PRAVILNIH
     
     def poraz(self):
         if self.napake() > STEVILO_DOVOLJENIH_NAPAK:
