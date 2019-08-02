@@ -1,9 +1,5 @@
-# dobiš vprašanja iz datoteke, 2 jih lahko narobe, 5 jih moraš prav da zmagaš
-
 import random
-
 from vprasanja import slovar
-
 
 STEVILO_DOVOLJENIH_NAPAK = 2
 STEVILO_PRAVILNIH = 5
@@ -13,7 +9,6 @@ NAPACEN_ODGOVOR = "-"
 ZMAGA = "W"
 PORAZ = "X"
 ZACETEK = "S"
-
 
 class Igra:
     def __init__(self, st_vprasanj):
