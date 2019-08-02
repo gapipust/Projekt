@@ -22,6 +22,13 @@ def zahtevaj_vnos():
     odgovor = input("Vpiši odgovor: ")
     return odgovor.lower()
 
+def ali_nova_igra():
+    vnos = input("Ali želite igrati novo igro?(odgovorite z da/ne)")
+    if vnos.lower() == "da":
+        pozeni_vmesnik()
+    else:
+        pass
+
 def pozeni_vmesnik():
     igra = model.nova_igra()
     while True:
@@ -40,7 +47,6 @@ def pozeni_vmesnik():
             print("Pravilno :)")
         elif rezultat == model.NAPACEN_ODGOVOR:
             print("Narobe :(")
+    ali_nova_igra()
 
-
-if __name__ == "__main__":
-    pozeni_vmesnik()
+pozeni_vmesnik()
