@@ -1,2 +1,2 @@
 Navodila za kviz:
-Na vsako vprašanje odgovorite z eno besedo, ki jo vnesite v polje samo z malimi črkami in brez šumnikov. Igra se konča z zmago, če odgovorite na 5 vprašanj pravilno, pri čemer se lahko zmotite največ dvakrat. Veliko sreče pri igranju!
+Na vsako vprašanje odgovorite samo z eno besedo, ki jo vnesite v polje (brez uporabe šumnikov). Igra se konča z zmago, če odgovorite na 5 vprašanj pravilno, pri čemer se lahko zmotite največ dvakrat. Veliko sreče pri odgovarjanju!
