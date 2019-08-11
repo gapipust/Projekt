@@ -4,7 +4,7 @@
   <h1>Kviz</h1>
 
   <blockquote>
-    <b>{{igra.trenutno_vprasanje()}}</b>
+    <h2>{{igra.trenutno_vprasanje()}}</h2>
   </blockquote>
 
   <table>
@@ -22,6 +22,8 @@
 
 %if poskus == model.ZMAGA:
   <h1>ZMAGA!</h1>
+  <b>Za začetek nove igre kliknite na gumb Nova igra.</b>
+  <h3> </h3>
 
   <form action="/nova_igra/" method="post">
     <button type="submit">Nova igra</button>
@@ -29,6 +31,8 @@
 
 %elif poskus == model.PORAZ:
   <h1>IZGUBILI STE!</h1>
+  <b>Za začetek nove igre kliknite na gumb Nova igra.</b>
+  <h3> </h3>
 
   <form action="/nova_igra/" method="post">
     <button type="submit">Nova igra</button>
@@ -36,6 +40,7 @@
 
 %end
 
+<h3> </h3>
 <form action="/igra/" method="post">
     Odgovor: <input type="text" name="odgovor">
     <button type="submit">Pošlji odgovor</button>
