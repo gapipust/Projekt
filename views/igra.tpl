@@ -4,18 +4,18 @@
   <h1>Kviz</h1>
 
   <blockquote>
-    <b>{{igra.trenutno_vprasanje}}</b>
+    <b>{{igra.trenutno_vprasanje()}}</b>
   </blockquote>
 
   <table>
     <tr>
       <td>
-        Število napak: <b>{{igra.napake()}}</b>
+        Število napak: <b>{{igra.stevilo_napacnih()}}</b>
       </td>
     </tr>
     <tr>  
       <td>
-        Število pravilnih odgovorov: <b>{{igra.pravilni()}}</b>
+        Število pravilnih odgovorov: <b>{{igra.stevilo_pravilnih()}}</b>
       </td>
     </tr>
   </table>
