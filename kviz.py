@@ -16,7 +16,6 @@ def nova_igra():
 @bottle.get("/igra/")
 def pokazi_igro():
     id_igre = int(bottle.request.get_cookie("idigre").split("e")[1])
-    #razbili smo tako, da dobimo ["idigr", "3"] in pokličemo 2. element
     igra, poskus = kviz.igre[id_igre]
     return bottle.template("igra.tpl", igra=igra, poskus=poskus)    
 
