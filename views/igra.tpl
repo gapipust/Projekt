@@ -3,23 +3,6 @@
 
   <h1>Kviz</h1>
 
-  <blockquote>
-    <h2>{{igra.trenutno_vprasanje()}}</h2>
-  </blockquote>
-
-  <table>
-    <tr>
-      <td>
-        Število napak: <b>{{igra.stevilo_napacnih()}}</b>
-      </td>
-    </tr>
-    <tr>  
-      <td>
-        Število pravilnih odgovorov: <b>{{igra.stevilo_pravilnih()}}</b>
-      </td>
-    </tr>
-  </table>
-
 %if poskus == model.ZMAGA:
   <h1>ZMAGA!</h1>
   <b>Za začetek nove igre kliknite na gumb Nova igra.</b>
@@ -38,12 +21,30 @@
     <button type="submit">Nova igra</button>
   </form>
 
-%end
+%else:
+  <blockquote>
+    <h2>{{igra.trenutno_vprasanje()}}</h2>
+  </blockquote>
+
+  <table>
+    <tr>
+      <td>
+        Število napak: <b>{{igra.stevilo_napacnih()}}</b>
+      </td>
+    </tr>
+    <tr>  
+      <td>
+        Število pravilnih odgovorov: <b>{{igra.stevilo_pravilnih()}}</b>
+      </td>
+    </tr>
+  </table>
 
 <h3> </h3>
 <form action="/igra/" method="post">
     Odgovor: <input type="text" name="odgovor">
     <button type="submit">Pošlji odgovor</button>
 </form>
+
+%end
 
 %end
